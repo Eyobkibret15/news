@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News.models &mdash; All in one News Aggregator Website 1.1 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> All in one News Aggregator Website
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../docs/modules.html">news</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">All in one News Aggregator Website</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+      <li>News.models</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for News.models</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">models</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd"> CONFIGURE AND SETUP THE NEWS DATABASE TABLES</span>
+<span class="sd"> STRUCTURE  </span>
+<span class="sd"> &quot;&quot;&quot;</span>
+
+
+<span class="c1"># Create your models here.</span>
+<div class="viewcode-block" id="NEWS"><a class="viewcode-back" href="../../docs/News.html#News.models.NEWS">[docs]</a><span class="k">class</span> <span class="nc">NEWS</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    THE IS ABSTRACT OR  BASE TABLE FOR ALL TABLES  ON OUR MODELS</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">id</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">AutoField</span><span class="p">(</span><span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">verbose_name</span><span class="o">=</span><span class="s2">&quot;news id&quot;</span><span class="p">)</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">unique</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">title_link</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">URLField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="c1"># comment = models.CharField(max_length=1000, blank=True, null=True)</span>
+    <span class="c1"># comment_link = models.URLField(max_length=1000, blank=True, null=True)</span>
+    <span class="n">detail</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">TextField</span><span class="p">(</span><span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">record_time</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateTimeField</span><span class="p">(</span><span class="n">auto_now_add</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<div class="viewcode-block" id="NEWS.Meta"><a class="viewcode-back" href="../../docs/News.html#News.models.NEWS.Meta">[docs]</a>    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">abstract</span> <span class="o">=</span> <span class="kc">True</span></div>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">title</span></div>
+
+
+<div class="viewcode-block" id="HackerNews"><a class="viewcode-back" href="../../docs/News.html#News.models.HackerNews">[docs]</a><span class="k">class</span> <span class="nc">HackerNews</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">verbose_name</span> <span class="o">=</span> <span class="s2">&quot;Hacker News&quot;</span>
+        <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s2">&quot; Hacker News&quot;</span></div>
+
+
+<div class="viewcode-block" id="BBC"><a class="viewcode-back" href="../../docs/News.html#News.models.BBC">[docs]</a><span class="k">class</span> <span class="nc">BBC</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    BBC TABLE IT IS A CHILD CLASS FROM PARENT  BASE  CLASS TABLE</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">news_time</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">location</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">verbose_name</span> <span class="o">=</span> <span class="s2">&quot;BBC News&quot;</span>
+        <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s2">&quot;     BBC News&quot;</span>
+        <span class="n">ordering</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;-record_time&#39;</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="TheGuardian"><a class="viewcode-back" href="../../docs/News.html#News.models.TheGuardian">[docs]</a><span class="k">class</span> <span class="nc">TheGuardian</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">verbose_name</span> <span class="o">=</span> <span class="s2">&quot;The Guardian News&quot;</span>
+        <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s2">&quot;The Guardian News&quot;</span></div>
+
+
+<div class="viewcode-block" id="CNN"><a class="viewcode-back" href="../../docs/News.html#News.models.CNN">[docs]</a><span class="k">class</span> <span class="nc">CNN</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">verbose_name</span> <span class="o">=</span> <span class="s2">&quot;CNN News&quot;</span>
+        <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s2">&quot;    CNN News&quot;</span></div>
+
+
+<div class="viewcode-block" id="SkySport"><a class="viewcode-back" href="../../docs/News.html#News.models.SkySport">[docs]</a><span class="k">class</span> <span class="nc">SkySport</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     SKY SPORT TABLE IT IS A CHILD CLASS FROM PARENT  BASE  CLASS TABLE</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">verbose_name</span> <span class="o">=</span> <span class="s2">&quot;Sky Sports News&quot;</span>
+        <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s2">&quot;   Sky Sports News&quot;</span></div>
+
+
+<div class="viewcode-block" id="Art"><a class="viewcode-back" href="../../docs/News.html#News.models.Art">[docs]</a><span class="k">class</span> <span class="nc">Art</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">verbose_name</span> <span class="o">=</span> <span class="s2">&quot;Art News&quot;</span>
+        <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s2">&quot;Art News&quot;</span></div>
+
+
+<div class="viewcode-block" id="TVN24"><a class="viewcode-back" href="../../docs/News.html#News.models.TVN24">[docs]</a><span class="k">class</span> <span class="nc">TVN24</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>
+    <span class="n">news_time</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">verbose_name</span> <span class="o">=</span> <span class="s2">&quot;TVN24 News&quot;</span>
+        <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s2">&quot;TVN24 News&quot;</span></div>
+
+
+<div class="viewcode-block" id="Aljazeera"><a class="viewcode-back" href="../../docs/News.html#News.models.Aljazeera">[docs]</a><span class="k">class</span> <span class="nc">Aljazeera</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>
+    <span class="n">news_time</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">verbose_name</span> <span class="o">=</span> <span class="s2">&quot;Aljazeera News&quot;</span>
+        <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s2">&quot;Aljazeera News&quot;</span></div>
+
+
+<div class="viewcode-block" id="FirstNews"><a class="viewcode-back" href="../../docs/News.html#News.models.FirstNews">[docs]</a><span class="k">class</span> <span class="nc">FirstNews</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     FIRST NEWS TABLE IT IS A CHILD CLASS FROM PARENT  BASE  CLASS TABLE</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">type</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">detail_link</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">URLField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">verbose_name</span> <span class="o">=</span> <span class="s2">&quot;First News&quot;</span>
+        <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s2">&quot; First News&quot;</span></div>
+
+
+<div class="viewcode-block" id="TechCrunch"><a class="viewcode-back" href="../../docs/News.html#News.models.TechCrunch">[docs]</a><span class="k">class</span> <span class="nc">TechCrunch</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     TECCRUNCH TABLE IT IS A CHILD CLASS FROM PARENT  BASE  CLASS TABLE</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">news_time</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">author</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">verbose_name</span> <span class="o">=</span> <span class="s2">&quot;TechCrunch News&quot;</span>
+        <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s2">&quot; TechCrunch News&quot;</span></div>
+
+
+<div class="viewcode-block" id="Gizmodo"><a class="viewcode-back" href="../../docs/News.html#News.models.Gizmodo">[docs]</a><span class="k">class</span> <span class="nc">Gizmodo</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     TGIZMODO TABLE IT IS A CHILD CLASS FROM PARENT  BASE  CLASS TABLE</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">news_time</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">author</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">author_link</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">URLField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">verbose_name</span> <span class="o">=</span> <span class="s2">&quot;Gizmodo News&quot;</span>
+        <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s2">&quot;Gizmodo News&quot;</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Habesha.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
