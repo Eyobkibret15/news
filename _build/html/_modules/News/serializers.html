@@ -70,10 +70,10 @@
 <span class="sd">MODEL SERIALIZER WITH THE HELP OF DJANGO RESTFRAMEWORK </span>
 <span class="sd">IT HALPS US TO VALIDATE DATA BEFORE WE STORE TO OUR DATABASE </span>
 <span class="sd">&quot;&quot;&quot;</span>
-<div class="viewcode-block" id="HackerSerializer"><a class="viewcode-back" href="../../docs/News.html#News.serializers.HackerSerializer">[docs]</a><span class="k">class</span> <span class="nc">HackerSerializer</span><span class="p">(</span><span class="n">ModelSerializer</span><span class="p">):</span>
-<div class="viewcode-block" id="HackerSerializer.Meta"><a class="viewcode-back" href="../../docs/News.html#News.serializers.HackerSerializer.Meta">[docs]</a>    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
-        <span class="n">model</span> <span class="o">=</span> <span class="n">HackerNews</span>
-        <span class="n">fields</span> <span class="o">=</span> <span class="s1">&#39;__all__&#39;</span></div></div>
+<span class="c1"># class HackerSerializer(ModelSerializer):</span>
+<span class="c1">#     class Meta:</span>
+<span class="c1">#         model = HackerNews</span>
+<span class="c1">#         fields = &#39;__all__&#39;</span>
 
 
 <div class="viewcode-block" id="BBCSerializer"><a class="viewcode-back" href="../../docs/News.html#News.serializers.BBCSerializer">[docs]</a><span class="k">class</span> <span class="nc">BBCSerializer</span><span class="p">(</span><span class="n">ModelSerializer</span><span class="p">):</span>
@@ -85,16 +85,16 @@
         <span class="n">fields</span> <span class="o">=</span> <span class="s1">&#39;__all__&#39;</span></div></div>
 
 
-<div class="viewcode-block" id="TheGuardianSerializer"><a class="viewcode-back" href="../../docs/News.html#News.serializers.TheGuardianSerializer">[docs]</a><span class="k">class</span> <span class="nc">TheGuardianSerializer</span><span class="p">(</span><span class="n">ModelSerializer</span><span class="p">):</span>
-<div class="viewcode-block" id="TheGuardianSerializer.Meta"><a class="viewcode-back" href="../../docs/News.html#News.serializers.TheGuardianSerializer.Meta">[docs]</a>    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
-        <span class="n">model</span> <span class="o">=</span> <span class="n">TheGuardian</span>
-        <span class="n">fields</span> <span class="o">=</span> <span class="s1">&#39;__all__&#39;</span></div></div>
+<span class="c1"># class TheGuardianSerializer(ModelSerializer):</span>
+<span class="c1">#     class Meta:</span>
+<span class="c1">#         model = TheGuardian</span>
+<span class="c1">#         fields = &#39;__all__&#39;</span>
 
 
-<div class="viewcode-block" id="CNNSerializer"><a class="viewcode-back" href="../../docs/News.html#News.serializers.CNNSerializer">[docs]</a><span class="k">class</span> <span class="nc">CNNSerializer</span><span class="p">(</span><span class="n">ModelSerializer</span><span class="p">):</span>
-<div class="viewcode-block" id="CNNSerializer.Meta"><a class="viewcode-back" href="../../docs/News.html#News.serializers.CNNSerializer.Meta">[docs]</a>    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
-        <span class="n">model</span> <span class="o">=</span> <span class="n">CNN</span>
-        <span class="n">fields</span> <span class="o">=</span> <span class="s1">&#39;__all__&#39;</span></div></div>
+<span class="c1"># class CNNSerializer(ModelSerializer):</span>
+<span class="c1">#     class Meta:</span>
+<span class="c1">#         model = CNN</span>
+<span class="c1">#         fields = &#39;__all__&#39;</span>
 
 
 <div class="viewcode-block" id="SkySportSerializer"><a class="viewcode-back" href="../../docs/News.html#News.serializers.SkySportSerializer">[docs]</a><span class="k">class</span> <span class="nc">SkySportSerializer</span><span class="p">(</span><span class="n">ModelSerializer</span><span class="p">):</span>
@@ -106,22 +106,22 @@
         <span class="n">fields</span> <span class="o">=</span> <span class="s1">&#39;__all__&#39;</span></div></div>
 
 
-<div class="viewcode-block" id="ArtSerializer"><a class="viewcode-back" href="../../docs/News.html#News.serializers.ArtSerializer">[docs]</a><span class="k">class</span> <span class="nc">ArtSerializer</span><span class="p">(</span><span class="n">ModelSerializer</span><span class="p">):</span>
-<div class="viewcode-block" id="ArtSerializer.Meta"><a class="viewcode-back" href="../../docs/News.html#News.serializers.ArtSerializer.Meta">[docs]</a>    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
-        <span class="n">model</span> <span class="o">=</span> <span class="n">Art</span>
-        <span class="n">fields</span> <span class="o">=</span> <span class="s1">&#39;__all__&#39;</span></div></div>
+<span class="c1"># class ArtSerializer(ModelSerializer):</span>
+<span class="c1">#     class Meta:</span>
+<span class="c1">#         model = Art</span>
+<span class="c1">#         fields = &#39;__all__&#39;</span>
 
 
-<div class="viewcode-block" id="TVN24Serializer"><a class="viewcode-back" href="../../docs/News.html#News.serializers.TVN24Serializer">[docs]</a><span class="k">class</span> <span class="nc">TVN24Serializer</span><span class="p">(</span><span class="n">ModelSerializer</span><span class="p">):</span>
-<div class="viewcode-block" id="TVN24Serializer.Meta"><a class="viewcode-back" href="../../docs/News.html#News.serializers.TVN24Serializer.Meta">[docs]</a>    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
-        <span class="n">model</span> <span class="o">=</span> <span class="n">TVN24</span>
-        <span class="n">fields</span> <span class="o">=</span> <span class="s1">&#39;__all__&#39;</span></div></div>
+<span class="c1"># class TVN24Serializer(ModelSerializer):</span>
+<span class="c1">#     class Meta:</span>
+<span class="c1">#         model = TVN24</span>
+<span class="c1">#         fields = &#39;__all__&#39;</span>
 
-
-<div class="viewcode-block" id="AljazeeraSerializer"><a class="viewcode-back" href="../../docs/News.html#News.serializers.AljazeeraSerializer">[docs]</a><span class="k">class</span> <span class="nc">AljazeeraSerializer</span><span class="p">(</span><span class="n">ModelSerializer</span><span class="p">):</span>
-<div class="viewcode-block" id="AljazeeraSerializer.Meta"><a class="viewcode-back" href="../../docs/News.html#News.serializers.AljazeeraSerializer.Meta">[docs]</a>    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
-        <span class="n">model</span> <span class="o">=</span> <span class="n">Aljazeera</span>
-        <span class="n">fields</span> <span class="o">=</span> <span class="s1">&#39;__all__&#39;</span></div></div>
+<span class="c1">#</span>
+<span class="c1"># class AljazeeraSerializer(ModelSerializer):</span>
+<span class="c1">#     class Meta:</span>
+<span class="c1">#         model = Aljazeera</span>
+<span class="c1">#         fields = &#39;__all__&#39;</span>
 
 
 <div class="viewcode-block" id="FirstNewsSerializer"><a class="viewcode-back" href="../../docs/News.html#News.serializers.FirstNewsSerializer">[docs]</a><span class="k">class</span> <span class="nc">FirstNewsSerializer</span><span class="p">(</span><span class="n">ModelSerializer</span><span class="p">):</span>

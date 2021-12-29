@@ -64,7 +64,8 @@ ROOT_URLCONF = 'News_Aggregator.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [Path.joinpath(BASE_DIR,'templates')],
+        'DIRS': [Path.joinpath(BASE_DIR,'templates'),
+                 Path.joinpath(BASE_DIR,'_build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -143,4 +144,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_ROOT = Path.joinpath(BASE_DIR,'static')
 TEMPLATE_DIRS = (
     Path.joinpath(BASE_DIR, 'templates'),
+Path.joinpath(BASE_DIR, '_build'),
 )

@@ -99,24 +99,18 @@
 <li class="toctree-l2"><a class="reference internal" href="News.Apis.html#subpackages">Subpackages</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="News.Apis.news_api.html">News.Apis.news_api package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="News.Apis.news_api.html#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="News.Apis.news_api.html#module-News.Apis.news_api.aljazeera">News.Apis.news_api.aljazeera module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="News.Apis.news_api.html#module-News.Apis.news_api.artnews">News.Apis.news_api.artnews module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="News.Apis.news_api.html#module-News.Apis.news_api.bbc">News.Apis.news_api.bbc module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="News.Apis.news_api.html#module-News.Apis.news_api.cnn">News.Apis.news_api.cnn module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="News.Apis.news_api.html#module-News.Apis.news_api.gizmodo">News.Apis.news_api.gizmodo module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="News.Apis.news_api.html#module-News.Apis.news_api.hackernews">News.Apis.news_api.hackernews module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="News.Apis.news_api.html#module-News.Apis.news_api.skysport">News.Apis.news_api.skysport module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="News.Apis.news_api.html#module-News.Apis.news_api.techcrunch">News.Apis.news_api.techcrunch module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="News.Apis.news_api.html#module-News.Apis.news_api.the_first_news">News.Apis.news_api.the_first_news module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="News.Apis.news_api.html#news-apis-news-api-theguardian-sport-module">News.Apis.news_api.theguardian_sport module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="News.Apis.news_api.html#news-apis-news-api-tvn24-module">News.Apis.news_api.tvn24 module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="News.Apis.news_api.html#module-News.Apis.news_api">Module contents</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="News.Apis.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="News.Apis.html#module-News.Apis.urls">News.Apis.urls module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="News.Apis.html#news-apis-urls-module">News.Apis.urls module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="News.Apis.html#module-News.Apis">Module contents</a></li>
 </ul>
 </li>
@@ -248,79 +242,6 @@
 <section id="module-News.models">
 <span id="news-models-module"></span><h2>News.models module<a class="headerlink" href="#module-News.models" title="Permalink to this headline"></a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="News.models.Aljazeera">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">News.models.</span></span><span class="sig-name descname"><span class="pre">Aljazeera</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_link</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">detail</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">record_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">news_time</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/models.html#Aljazeera"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.models.Aljazeera" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#News.models.NEWS" title="News.models.NEWS"><code class="xref py py-class docutils literal notranslate"><span class="pre">News.models.NEWS</span></code></a></p>
-<dl class="py exception">
-<dt class="sig sig-object py" id="News.models.Aljazeera.DoesNotExist">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#News.models.Aljazeera.DoesNotExist" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
-</dd></dl>
-
-<dl class="py exception">
-<dt class="sig sig-object py" id="News.models.Aljazeera.MultipleObjectsReturned">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#News.models.Aljazeera.MultipleObjectsReturned" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="News.models.Aljazeera.get_next_by_record_time">
-<span class="sig-name descname"><span class="pre">get_next_by_record_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">record_time&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#News.models.Aljazeera.get_next_by_record_time" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="News.models.Aljazeera.get_previous_by_record_time">
-<span class="sig-name descname"><span class="pre">get_previous_by_record_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">record_time&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#News.models.Aljazeera.get_previous_by_record_time" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.models.Aljazeera.news_time">
-<span class="sig-name descname"><span class="pre">news_time</span></span><a class="headerlink" href="#News.models.Aljazeera.news_time" title="Permalink to this definition"></a></dt>
-<dd><p>A wrapper for a deferred-loading field. When the value is read from this
-object the first time, the query is executed.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.models.Aljazeera.objects">
-<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#News.models.Aljazeera.objects" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="News.models.Art">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">News.models.</span></span><span class="sig-name descname"><span class="pre">Art</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_link</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">detail</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">record_time</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/models.html#Art"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.models.Art" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#News.models.NEWS" title="News.models.NEWS"><code class="xref py py-class docutils literal notranslate"><span class="pre">News.models.NEWS</span></code></a></p>
-<dl class="py exception">
-<dt class="sig sig-object py" id="News.models.Art.DoesNotExist">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#News.models.Art.DoesNotExist" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
-</dd></dl>
-
-<dl class="py exception">
-<dt class="sig sig-object py" id="News.models.Art.MultipleObjectsReturned">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#News.models.Art.MultipleObjectsReturned" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="News.models.Art.get_next_by_record_time">
-<span class="sig-name descname"><span class="pre">get_next_by_record_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">record_time&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#News.models.Art.get_next_by_record_time" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="News.models.Art.get_previous_by_record_time">
-<span class="sig-name descname"><span class="pre">get_previous_by_record_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">record_time&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#News.models.Art.get_previous_by_record_time" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.models.Art.objects">
-<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#News.models.Art.objects" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
 <dt class="sig sig-object py" id="News.models.BBC">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">News.models.</span></span><span class="sig-name descname"><span class="pre">BBC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/models.html#BBC"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.models.BBC" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="#News.models.NEWS" title="News.models.NEWS"><code class="xref py py-class docutils literal notranslate"><span class="pre">News.models.NEWS</span></code></a></p>
@@ -364,39 +285,6 @@ object the first time, the query is executed.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="News.models.BBC.objects">
 <span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#News.models.BBC.objects" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="News.models.CNN">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">News.models.</span></span><span class="sig-name descname"><span class="pre">CNN</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_link</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">detail</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">record_time</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/models.html#CNN"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.models.CNN" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#News.models.NEWS" title="News.models.NEWS"><code class="xref py py-class docutils literal notranslate"><span class="pre">News.models.NEWS</span></code></a></p>
-<dl class="py exception">
-<dt class="sig sig-object py" id="News.models.CNN.DoesNotExist">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#News.models.CNN.DoesNotExist" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
-</dd></dl>
-
-<dl class="py exception">
-<dt class="sig sig-object py" id="News.models.CNN.MultipleObjectsReturned">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#News.models.CNN.MultipleObjectsReturned" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="News.models.CNN.get_next_by_record_time">
-<span class="sig-name descname"><span class="pre">get_next_by_record_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">record_time&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#News.models.CNN.get_next_by_record_time" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="News.models.CNN.get_previous_by_record_time">
-<span class="sig-name descname"><span class="pre">get_previous_by_record_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">record_time&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#News.models.CNN.get_previous_by_record_time" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.models.CNN.objects">
-<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#News.models.CNN.objects" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -505,39 +393,6 @@ object the first time, the query is executed.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt class="sig sig-object py" id="News.models.HackerNews">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">News.models.</span></span><span class="sig-name descname"><span class="pre">HackerNews</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_link</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">detail</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">record_time</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/models.html#HackerNews"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.models.HackerNews" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#News.models.NEWS" title="News.models.NEWS"><code class="xref py py-class docutils literal notranslate"><span class="pre">News.models.NEWS</span></code></a></p>
-<dl class="py exception">
-<dt class="sig sig-object py" id="News.models.HackerNews.DoesNotExist">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#News.models.HackerNews.DoesNotExist" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
-</dd></dl>
-
-<dl class="py exception">
-<dt class="sig sig-object py" id="News.models.HackerNews.MultipleObjectsReturned">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#News.models.HackerNews.MultipleObjectsReturned" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="News.models.HackerNews.get_next_by_record_time">
-<span class="sig-name descname"><span class="pre">get_next_by_record_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">record_time&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#News.models.HackerNews.get_next_by_record_time" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="News.models.HackerNews.get_previous_by_record_time">
-<span class="sig-name descname"><span class="pre">get_previous_by_record_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">record_time&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#News.models.HackerNews.get_previous_by_record_time" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.models.HackerNews.objects">
-<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#News.models.HackerNews.objects" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
 <dt class="sig sig-object py" id="News.models.NEWS">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">News.models.</span></span><span class="sig-name descname"><span class="pre">NEWS</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/models.html#NEWS"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.models.NEWS" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
@@ -635,46 +490,6 @@ object the first time, the query is executed.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt class="sig sig-object py" id="News.models.TVN24">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">News.models.</span></span><span class="sig-name descname"><span class="pre">TVN24</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_link</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">detail</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">record_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">news_time</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/models.html#TVN24"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.models.TVN24" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#News.models.NEWS" title="News.models.NEWS"><code class="xref py py-class docutils literal notranslate"><span class="pre">News.models.NEWS</span></code></a></p>
-<dl class="py exception">
-<dt class="sig sig-object py" id="News.models.TVN24.DoesNotExist">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#News.models.TVN24.DoesNotExist" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
-</dd></dl>
-
-<dl class="py exception">
-<dt class="sig sig-object py" id="News.models.TVN24.MultipleObjectsReturned">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#News.models.TVN24.MultipleObjectsReturned" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="News.models.TVN24.get_next_by_record_time">
-<span class="sig-name descname"><span class="pre">get_next_by_record_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">record_time&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#News.models.TVN24.get_next_by_record_time" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="News.models.TVN24.get_previous_by_record_time">
-<span class="sig-name descname"><span class="pre">get_previous_by_record_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">record_time&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#News.models.TVN24.get_previous_by_record_time" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.models.TVN24.news_time">
-<span class="sig-name descname"><span class="pre">news_time</span></span><a class="headerlink" href="#News.models.TVN24.news_time" title="Permalink to this definition"></a></dt>
-<dd><p>A wrapper for a deferred-loading field. When the value is read from this
-object the first time, the query is executed.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.models.TVN24.objects">
-<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#News.models.TVN24.objects" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
 <dt class="sig sig-object py" id="News.models.TechCrunch">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">News.models.</span></span><span class="sig-name descname"><span class="pre">TechCrunch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/models.html#TechCrunch"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.models.TechCrunch" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="#News.models.NEWS" title="News.models.NEWS"><code class="xref py py-class docutils literal notranslate"><span class="pre">News.models.NEWS</span></code></a></p>
@@ -722,88 +537,9 @@ object the first time, the query is executed.</p>
 
 </dd></dl>
 
-<dl class="py class">
-<dt class="sig sig-object py" id="News.models.TheGuardian">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">News.models.</span></span><span class="sig-name descname"><span class="pre">TheGuardian</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_link</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">detail</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">record_time</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/models.html#TheGuardian"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.models.TheGuardian" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#News.models.NEWS" title="News.models.NEWS"><code class="xref py py-class docutils literal notranslate"><span class="pre">News.models.NEWS</span></code></a></p>
-<dl class="py exception">
-<dt class="sig sig-object py" id="News.models.TheGuardian.DoesNotExist">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#News.models.TheGuardian.DoesNotExist" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
-</dd></dl>
-
-<dl class="py exception">
-<dt class="sig sig-object py" id="News.models.TheGuardian.MultipleObjectsReturned">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#News.models.TheGuardian.MultipleObjectsReturned" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="News.models.TheGuardian.get_next_by_record_time">
-<span class="sig-name descname"><span class="pre">get_next_by_record_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">record_time&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#News.models.TheGuardian.get_next_by_record_time" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="News.models.TheGuardian.get_previous_by_record_time">
-<span class="sig-name descname"><span class="pre">get_previous_by_record_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">record_time&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#News.models.TheGuardian.get_previous_by_record_time" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.models.TheGuardian.objects">
-<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#News.models.TheGuardian.objects" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
 </section>
 <section id="module-News.serializers">
 <span id="news-serializers-module"></span><h2>News.serializers module<a class="headerlink" href="#module-News.serializers" title="Permalink to this headline"></a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="News.serializers.AljazeeraSerializer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">News.serializers.</span></span><span class="sig-name descname"><span class="pre">AljazeeraSerializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/serializers.html#AljazeeraSerializer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.serializers.AljazeeraSerializer" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.ModelSerializer</span></code></p>
-<dl class="py class">
-<dt class="sig sig-object py" id="News.serializers.AljazeeraSerializer.Meta">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="../_modules/News/serializers.html#AljazeeraSerializer.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.serializers.AljazeeraSerializer.Meta" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.serializers.AljazeeraSerializer.Meta.fields">
-<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'__all__'</span></em><a class="headerlink" href="#News.serializers.AljazeeraSerializer.Meta.fields" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.serializers.AljazeeraSerializer.Meta.model">
-<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#News.serializers.AljazeeraSerializer.Meta.model" title="Permalink to this definition"></a></dt>
-<dd><p>alias of <a class="reference internal" href="#News.models.Aljazeera" title="News.models.Aljazeera"><code class="xref py py-class docutils literal notranslate"><span class="pre">News.models.Aljazeera</span></code></a></p>
-</dd></dl>
-
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="News.serializers.ArtSerializer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">News.serializers.</span></span><span class="sig-name descname"><span class="pre">ArtSerializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/serializers.html#ArtSerializer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.serializers.ArtSerializer" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.ModelSerializer</span></code></p>
-<dl class="py class">
-<dt class="sig sig-object py" id="News.serializers.ArtSerializer.Meta">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="../_modules/News/serializers.html#ArtSerializer.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.serializers.ArtSerializer.Meta" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.serializers.ArtSerializer.Meta.fields">
-<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'__all__'</span></em><a class="headerlink" href="#News.serializers.ArtSerializer.Meta.fields" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.serializers.ArtSerializer.Meta.model">
-<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#News.serializers.ArtSerializer.Meta.model" title="Permalink to this definition"></a></dt>
-<dd><p>alias of <a class="reference internal" href="#News.models.Art" title="News.models.Art"><code class="xref py py-class docutils literal notranslate"><span class="pre">News.models.Art</span></code></a></p>
-</dd></dl>
-
-</dd></dl>
-
-</dd></dl>
-
 <dl class="py class">
 <dt class="sig sig-object py" id="News.serializers.BBCSerializer">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">News.serializers.</span></span><span class="sig-name descname"><span class="pre">BBCSerializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/serializers.html#BBCSerializer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.serializers.BBCSerializer" title="Permalink to this definition"></a></dt>
@@ -822,29 +558,6 @@ object the first time, the query is executed.</p>
 <dt class="sig sig-object py" id="News.serializers.BBCSerializer.Meta.model">
 <span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#News.serializers.BBCSerializer.Meta.model" title="Permalink to this definition"></a></dt>
 <dd><p>alias of <a class="reference internal" href="#News.models.BBC" title="News.models.BBC"><code class="xref py py-class docutils literal notranslate"><span class="pre">News.models.BBC</span></code></a></p>
-</dd></dl>
-
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="News.serializers.CNNSerializer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">News.serializers.</span></span><span class="sig-name descname"><span class="pre">CNNSerializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/serializers.html#CNNSerializer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.serializers.CNNSerializer" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.ModelSerializer</span></code></p>
-<dl class="py class">
-<dt class="sig sig-object py" id="News.serializers.CNNSerializer.Meta">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="../_modules/News/serializers.html#CNNSerializer.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.serializers.CNNSerializer.Meta" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.serializers.CNNSerializer.Meta.fields">
-<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'__all__'</span></em><a class="headerlink" href="#News.serializers.CNNSerializer.Meta.fields" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.serializers.CNNSerializer.Meta.model">
-<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#News.serializers.CNNSerializer.Meta.model" title="Permalink to this definition"></a></dt>
-<dd><p>alias of <a class="reference internal" href="#News.models.CNN" title="News.models.CNN"><code class="xref py py-class docutils literal notranslate"><span class="pre">News.models.CNN</span></code></a></p>
 </dd></dl>
 
 </dd></dl>
@@ -900,29 +613,6 @@ object the first time, the query is executed.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt class="sig sig-object py" id="News.serializers.HackerSerializer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">News.serializers.</span></span><span class="sig-name descname"><span class="pre">HackerSerializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/serializers.html#HackerSerializer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.serializers.HackerSerializer" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.ModelSerializer</span></code></p>
-<dl class="py class">
-<dt class="sig sig-object py" id="News.serializers.HackerSerializer.Meta">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="../_modules/News/serializers.html#HackerSerializer.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.serializers.HackerSerializer.Meta" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.serializers.HackerSerializer.Meta.fields">
-<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'__all__'</span></em><a class="headerlink" href="#News.serializers.HackerSerializer.Meta.fields" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.serializers.HackerSerializer.Meta.model">
-<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#News.serializers.HackerSerializer.Meta.model" title="Permalink to this definition"></a></dt>
-<dd><p>alias of <a class="reference internal" href="#News.models.HackerNews" title="News.models.HackerNews"><code class="xref py py-class docutils literal notranslate"><span class="pre">News.models.HackerNews</span></code></a></p>
-</dd></dl>
-
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
 <dt class="sig sig-object py" id="News.serializers.SkySportSerializer">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">News.serializers.</span></span><span class="sig-name descname"><span class="pre">SkySportSerializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/serializers.html#SkySportSerializer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.serializers.SkySportSerializer" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.ModelSerializer</span></code></p>
@@ -940,29 +630,6 @@ object the first time, the query is executed.</p>
 <dt class="sig sig-object py" id="News.serializers.SkySportSerializer.Meta.model">
 <span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#News.serializers.SkySportSerializer.Meta.model" title="Permalink to this definition"></a></dt>
 <dd><p>alias of <a class="reference internal" href="#News.models.SkySport" title="News.models.SkySport"><code class="xref py py-class docutils literal notranslate"><span class="pre">News.models.SkySport</span></code></a></p>
-</dd></dl>
-
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="News.serializers.TVN24Serializer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">News.serializers.</span></span><span class="sig-name descname"><span class="pre">TVN24Serializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/serializers.html#TVN24Serializer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.serializers.TVN24Serializer" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.ModelSerializer</span></code></p>
-<dl class="py class">
-<dt class="sig sig-object py" id="News.serializers.TVN24Serializer.Meta">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="../_modules/News/serializers.html#TVN24Serializer.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.serializers.TVN24Serializer.Meta" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.serializers.TVN24Serializer.Meta.fields">
-<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'__all__'</span></em><a class="headerlink" href="#News.serializers.TVN24Serializer.Meta.fields" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.serializers.TVN24Serializer.Meta.model">
-<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#News.serializers.TVN24Serializer.Meta.model" title="Permalink to this definition"></a></dt>
-<dd><p>alias of <a class="reference internal" href="#News.models.TVN24" title="News.models.TVN24"><code class="xref py py-class docutils literal notranslate"><span class="pre">News.models.TVN24</span></code></a></p>
 </dd></dl>
 
 </dd></dl>
@@ -993,29 +660,6 @@ object the first time, the query is executed.</p>
 
 </dd></dl>
 
-<dl class="py class">
-<dt class="sig sig-object py" id="News.serializers.TheGuardianSerializer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">News.serializers.</span></span><span class="sig-name descname"><span class="pre">TheGuardianSerializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/serializers.html#TheGuardianSerializer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.serializers.TheGuardianSerializer" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.ModelSerializer</span></code></p>
-<dl class="py class">
-<dt class="sig sig-object py" id="News.serializers.TheGuardianSerializer.Meta">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="../_modules/News/serializers.html#TheGuardianSerializer.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.serializers.TheGuardianSerializer.Meta" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.serializers.TheGuardianSerializer.Meta.fields">
-<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'__all__'</span></em><a class="headerlink" href="#News.serializers.TheGuardianSerializer.Meta.fields" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="News.serializers.TheGuardianSerializer.Meta.model">
-<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#News.serializers.TheGuardianSerializer.Meta.model" title="Permalink to this definition"></a></dt>
-<dd><p>alias of <a class="reference internal" href="#News.models.TheGuardian" title="News.models.TheGuardian"><code class="xref py py-class docutils literal notranslate"><span class="pre">News.models.TheGuardian</span></code></a></p>
-</dd></dl>
-
-</dd></dl>
-
-</dd></dl>
-
 </section>
 <section id="module-News.tests">
 <span id="news-tests-module"></span><h2>News.tests module<a class="headerlink" href="#module-News.tests" title="Permalink to this headline"></a></h2>
@@ -1025,19 +669,6 @@ object the first time, the query is executed.</p>
 </section>
 <section id="module-News.views">
 <span id="news-views-module"></span><h2>News.views module<a class="headerlink" href="#module-News.views" title="Permalink to this headline"></a></h2>
-<dl class="py function">
-<dt class="sig sig-object py" id="News.views.check">
-<span class="sig-prename descclassname"><span class="pre">News.views.</span></span><span class="sig-name descname"><span class="pre">check</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/views.html#check"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.views.check" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>requests</strong> – </p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
 <dl class="py function">
 <dt class="sig sig-object py" id="News.views.collect">
 <span class="sig-prename descclassname"><span class="pre">News.views.</span></span><span class="sig-name descname"><span class="pre">collect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/views.html#collect"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.views.collect" title="Permalink to this definition"></a></dt>
@@ -1052,6 +683,19 @@ each table
 <dt class="sig sig-object py" id="News.views.data">
 <span class="sig-prename descclassname"><span class="pre">News.views.</span></span><span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#News.views.data" title="Permalink to this definition"></a></dt>
 <dd><p>OUR MAIN FILE/CONTROLLER</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="News.views.docs">
+<span class="sig-prename descclassname"><span class="pre">News.views.</span></span><span class="sig-name descname"><span class="pre">docs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/News/views.html#docs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#News.views.docs" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>requests</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">

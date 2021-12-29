@@ -1,4 +1,5 @@
 import json
+import webbrowser
 
 from django.http import HttpResponse
 from django.shortcuts import render
@@ -49,15 +50,17 @@ def home(request):
 
 
 @api_view(['GET'])
-def check(requests: Request):
+def docs(requests: Request):
     """
 
     :param requests:
     :return:
     """
     # data = '<html><body><h1>I love you baby </h1></body></html>'
-    return render(requests, 'index.html')
-
+    new=2
+    url = "C:/Users/EyobKibret/PycharmProjects/news/_build/html/index.html"
+    webbrowser.open(url, new=new)
+    return HttpResponse("please check/navigate to the new open tab in the current browser")
 
 def collect(obj, name):
     """

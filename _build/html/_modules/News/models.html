@@ -92,10 +92,10 @@
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">title</span></div>
 
 
-<div class="viewcode-block" id="HackerNews"><a class="viewcode-back" href="../../docs/News.html#News.models.HackerNews">[docs]</a><span class="k">class</span> <span class="nc">HackerNews</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>
-    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
-        <span class="n">verbose_name</span> <span class="o">=</span> <span class="s2">&quot;Hacker News&quot;</span>
-        <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s2">&quot; Hacker News&quot;</span></div>
+<span class="c1"># class HackerNews(NEWS):</span>
+<span class="c1">#     class Meta:</span>
+<span class="c1">#         verbose_name = &quot;Hacker News&quot;</span>
+<span class="c1">#         verbose_name_plural = &quot; Hacker News&quot;</span>
 
 
 <div class="viewcode-block" id="BBC"><a class="viewcode-back" href="../../docs/News.html#News.models.BBC">[docs]</a><span class="k">class</span> <span class="nc">BBC</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>
@@ -110,17 +110,17 @@
         <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s2">&quot;     BBC News&quot;</span>
         <span class="n">ordering</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;-record_time&#39;</span><span class="p">]</span></div>
 
-
-<div class="viewcode-block" id="TheGuardian"><a class="viewcode-back" href="../../docs/News.html#News.models.TheGuardian">[docs]</a><span class="k">class</span> <span class="nc">TheGuardian</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>
-    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
-        <span class="n">verbose_name</span> <span class="o">=</span> <span class="s2">&quot;The Guardian News&quot;</span>
-        <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s2">&quot;The Guardian News&quot;</span></div>
-
-
-<div class="viewcode-block" id="CNN"><a class="viewcode-back" href="../../docs/News.html#News.models.CNN">[docs]</a><span class="k">class</span> <span class="nc">CNN</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>
-    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
-        <span class="n">verbose_name</span> <span class="o">=</span> <span class="s2">&quot;CNN News&quot;</span>
-        <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s2">&quot;    CNN News&quot;</span></div>
+<span class="c1">#</span>
+<span class="c1"># class TheGuardian(NEWS):</span>
+<span class="c1">#     class Meta:</span>
+<span class="c1">#         verbose_name = &quot;The Guardian News&quot;</span>
+<span class="c1">#         verbose_name_plural = &quot;The Guardian News&quot;</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1"># class CNN(NEWS):</span>
+<span class="c1">#     class Meta:</span>
+<span class="c1">#         verbose_name = &quot;CNN News&quot;</span>
+<span class="c1">#         verbose_name_plural = &quot;    CNN News&quot;</span>
 
 
 <div class="viewcode-block" id="SkySport"><a class="viewcode-back" href="../../docs/News.html#News.models.SkySport">[docs]</a><span class="k">class</span> <span class="nc">SkySport</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>
@@ -130,28 +130,28 @@
     <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
         <span class="n">verbose_name</span> <span class="o">=</span> <span class="s2">&quot;Sky Sports News&quot;</span>
         <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s2">&quot;   Sky Sports News&quot;</span></div>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1"># class Art(NEWS):</span>
+<span class="c1">#     class Meta:</span>
+<span class="c1">#         verbose_name = &quot;Art News&quot;</span>
+<span class="c1">#         verbose_name_plural = &quot;Art News&quot;</span>
 
 
-<div class="viewcode-block" id="Art"><a class="viewcode-back" href="../../docs/News.html#News.models.Art">[docs]</a><span class="k">class</span> <span class="nc">Art</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>
-    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
-        <span class="n">verbose_name</span> <span class="o">=</span> <span class="s2">&quot;Art News&quot;</span>
-        <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s2">&quot;Art News&quot;</span></div>
+<span class="c1"># class TVN24(NEWS):</span>
+<span class="c1">#     news_time = models.CharField(max_length=1000, blank=True, null=True)</span>
+<span class="c1">#</span>
+<span class="c1">#     class Meta:</span>
+<span class="c1">#         verbose_name = &quot;TVN24 News&quot;</span>
+<span class="c1">#         verbose_name_plural = &quot;TVN24 News&quot;</span>
 
 
-<div class="viewcode-block" id="TVN24"><a class="viewcode-back" href="../../docs/News.html#News.models.TVN24">[docs]</a><span class="k">class</span> <span class="nc">TVN24</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>
-    <span class="n">news_time</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
-        <span class="n">verbose_name</span> <span class="o">=</span> <span class="s2">&quot;TVN24 News&quot;</span>
-        <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s2">&quot;TVN24 News&quot;</span></div>
-
-
-<div class="viewcode-block" id="Aljazeera"><a class="viewcode-back" href="../../docs/News.html#News.models.Aljazeera">[docs]</a><span class="k">class</span> <span class="nc">Aljazeera</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>
-    <span class="n">news_time</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
-        <span class="n">verbose_name</span> <span class="o">=</span> <span class="s2">&quot;Aljazeera News&quot;</span>
-        <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s2">&quot;Aljazeera News&quot;</span></div>
+<span class="c1"># class Aljazeera(NEWS):</span>
+<span class="c1">#     news_time = models.CharField(max_length=1000, blank=True, null=True)</span>
+<span class="c1">#</span>
+<span class="c1">#     class Meta:</span>
+<span class="c1">#         verbose_name = &quot;Aljazeera News&quot;</span>
+<span class="c1">#         verbose_name_plural = &quot;Aljazeera News&quot;</span>
 
 
 <div class="viewcode-block" id="FirstNews"><a class="viewcode-back" href="../../docs/News.html#News.models.FirstNews">[docs]</a><span class="k">class</span> <span class="nc">FirstNews</span><span class="p">(</span><span class="n">NEWS</span><span class="p">):</span>

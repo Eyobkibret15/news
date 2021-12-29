@@ -26,10 +26,10 @@ class NEWS(models.Model):
         return self.title
 
 
-class HackerNews(NEWS):
-    class Meta:
-        verbose_name = "Hacker News"
-        verbose_name_plural = " Hacker News"
+# class HackerNews(NEWS):
+#     class Meta:
+#         verbose_name = "Hacker News"
+#         verbose_name_plural = " Hacker News"
 
 
 class BBC(NEWS):
@@ -44,17 +44,17 @@ class BBC(NEWS):
         verbose_name_plural = "     BBC News"
         ordering = ['-record_time']
 
-
-class TheGuardian(NEWS):
-    class Meta:
-        verbose_name = "The Guardian News"
-        verbose_name_plural = "The Guardian News"
-
-
-class CNN(NEWS):
-    class Meta:
-        verbose_name = "CNN News"
-        verbose_name_plural = "    CNN News"
+#
+# class TheGuardian(NEWS):
+#     class Meta:
+#         verbose_name = "The Guardian News"
+#         verbose_name_plural = "The Guardian News"
+#
+#
+# class CNN(NEWS):
+#     class Meta:
+#         verbose_name = "CNN News"
+#         verbose_name_plural = "    CNN News"
 
 
 class SkySport(NEWS):
@@ -64,28 +64,28 @@ class SkySport(NEWS):
     class Meta:
         verbose_name = "Sky Sports News"
         verbose_name_plural = "   Sky Sports News"
+#
+#
+# class Art(NEWS):
+#     class Meta:
+#         verbose_name = "Art News"
+#         verbose_name_plural = "Art News"
 
 
-class Art(NEWS):
-    class Meta:
-        verbose_name = "Art News"
-        verbose_name_plural = "Art News"
+# class TVN24(NEWS):
+#     news_time = models.CharField(max_length=1000, blank=True, null=True)
+#
+#     class Meta:
+#         verbose_name = "TVN24 News"
+#         verbose_name_plural = "TVN24 News"
 
 
-class TVN24(NEWS):
-    news_time = models.CharField(max_length=1000, blank=True, null=True)
-
-    class Meta:
-        verbose_name = "TVN24 News"
-        verbose_name_plural = "TVN24 News"
-
-
-class Aljazeera(NEWS):
-    news_time = models.CharField(max_length=1000, blank=True, null=True)
-
-    class Meta:
-        verbose_name = "Aljazeera News"
-        verbose_name_plural = "Aljazeera News"
+# class Aljazeera(NEWS):
+#     news_time = models.CharField(max_length=1000, blank=True, null=True)
+#
+#     class Meta:
+#         verbose_name = "Aljazeera News"
+#         verbose_name_plural = "Aljazeera News"
 
 
 class FirstNews(NEWS):

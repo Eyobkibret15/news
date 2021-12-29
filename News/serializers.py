@@ -4,10 +4,10 @@ from .models import *
 MODEL SERIALIZER WITH THE HELP OF DJANGO RESTFRAMEWORK 
 IT HALPS US TO VALIDATE DATA BEFORE WE STORE TO OUR DATABASE 
 """
-class HackerSerializer(ModelSerializer):
-    class Meta:
-        model = HackerNews
-        fields = '__all__'
+# class HackerSerializer(ModelSerializer):
+#     class Meta:
+#         model = HackerNews
+#         fields = '__all__'
 
 
 class BBCSerializer(ModelSerializer):
@@ -19,16 +19,16 @@ class BBCSerializer(ModelSerializer):
         fields = '__all__'
 
 
-class TheGuardianSerializer(ModelSerializer):
-    class Meta:
-        model = TheGuardian
-        fields = '__all__'
+# class TheGuardianSerializer(ModelSerializer):
+#     class Meta:
+#         model = TheGuardian
+#         fields = '__all__'
 
 
-class CNNSerializer(ModelSerializer):
-    class Meta:
-        model = CNN
-        fields = '__all__'
+# class CNNSerializer(ModelSerializer):
+#     class Meta:
+#         model = CNN
+#         fields = '__all__'
 
 
 class SkySportSerializer(ModelSerializer):
@@ -40,22 +40,22 @@ class SkySportSerializer(ModelSerializer):
         fields = '__all__'
 
 
-class ArtSerializer(ModelSerializer):
-    class Meta:
-        model = Art
-        fields = '__all__'
+# class ArtSerializer(ModelSerializer):
+#     class Meta:
+#         model = Art
+#         fields = '__all__'
 
 
-class TVN24Serializer(ModelSerializer):
-    class Meta:
-        model = TVN24
-        fields = '__all__'
+# class TVN24Serializer(ModelSerializer):
+#     class Meta:
+#         model = TVN24
+#         fields = '__all__'
 
-
-class AljazeeraSerializer(ModelSerializer):
-    class Meta:
-        model = Aljazeera
-        fields = '__all__'
+#
+# class AljazeeraSerializer(ModelSerializer):
+#     class Meta:
+#         model = Aljazeera
+#         fields = '__all__'
 
 
 class FirstNewsSerializer(ModelSerializer):
